@@ -1,0 +1,247 @@
+.subscribe
+    padding-bottom: 35px
+    padding-top: 45px
+    &-info
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        padding-bottom: 35px
+        &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background: #e5e5e5
+        &__logo
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 35px
+            background: url('../img/subscribe/image.jpg') no-repeat center center
+        &__org
+            font-size: 16px
+            font-weight: bold
+            line-height: 30px
+            margin-bottom: 20px
+        &__name, &__phone
+            font-size: 16px
+            line-height: 30px
+            margin-bottom: 10px
+        &__change
+            color: $main
+            text-decoration: underline
+            font-size: 14px
+            &:hover
+                color: $main
+        &__number
+            font-size: 40px
+            color: $main
+            font-weight: bold
+            &_rub
+                font-family: ALSRubl
+        &__text
+            font-size: 14px
+        &__icon
+            color: $main
+            width: 22px
+            height: 22px
+            border-radius: 50%
+            border: 1px solid $main
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 10px
+        &__value
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 150px
+            height: 150px
+            border-radius: 50%
+            border: 2px solid $main
+            border-top-color: #CD3F36
+            transform: rotate(45deg)
+            margin-top: 50px
+        &__wrap
+            transform: rotate(-45deg)
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__attention
+            line-height: 25px
+            font-size: 14px
+            font-weight: 500
+        &-warning
+            display: flex
+            align-items: center
+            margin-top: 25px
+        &-rep
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-main
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-personal
+            display: flex
+            align-items: flex-start
+        &-name
+            display: flex
+            flex-direction: column
+        &-balance
+            background: #F7F9FC
+            border-radius: 5px
+            padding: 15px
+            padding-left: 20px
+            font-size: 14px
+            line-height: 20px
+        &-money
+            display: flex
+            align-items: center
+            margin-bottom: 35px
+        &-note
+            display: flex
+            align-items: center
+            margin-left: 50px
+            &__number
+                font-size: 10px
+                margin-left: 4px
+        &__money
+            font-weight: bold
+            margin-left: 5px
+        &__repl
+            font-size: 14px
+            line-height: 20px
+            margin-left: 20px
+            color: $main
+            text-decoration: underline
+            &:hover
+                color: $main
+        &-current
+            background: $main
+            color: #ffffff
+            border-radius: 5px  
+            display: flex
+            align-items: flex-start
+            padding: 20px
+            padding-right: 40px
+        &-tariff
+            display: flex
+            flex-direction: column
+            &__text
+                font-size: 14px
+                line-height: 25px
+            &__value
+                font-size: 16px
+                font-weight: bold
+                line-height: 25px
+        &__image
+            margin-right: 25px
+            display: flex
+            align-items: center
+            justify-content: center
+            &_head
+                margin-right: 0
+        &-list
+            padding: 0
+            margin: 0
+            list-style: none
+            list-style-image: url('../img/subscribe/Path.svg')
+            margin-top: 15px
+        &-item
+            font-size: 14px
+            line-height: 25px
+    &-tariff
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-title
+            font-size: 16px
+            font-weight: 500
+            line-height: 25px
+            margin-top: 35px
+            margin-bottom: 35px
+        &-block
+            display: flex
+            justify-content: space-between
+            width: 100%
+        &__price
+            font-size: 20px
+            font-weight: bold
+            color: #ffffff
+            margin-bottom: 35px
+            &_base
+                color: #81909F
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 20px
+            border-radius: 5px
+            max-width: 290px
+            width: 100%
+            &_base
+                background: #F7F9FC
+            &_optimal
+                color: #ffffff
+                background: #81909F
+            &_max
+                color: #ffffff
+                background: #34495E
+        &__title
+            font-size: 16px
+            font-weight: bold
+            line-height: 25px
+        &-list
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-left: 20px
+            margin: 0
+            list-style: none
+            list-style-image: url('../img/subscribe/PathGreen.svg')
+            margin-top: 20px
+            margin-bottom: 35px
+        &__item
+            font-size: 13px
+            line-height: 25px
+        &__button
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2)
+            border-radius: 5px  
+            width: 100%
+            background: $main
+            color: #ffffff
+            font-size: 16px
+            line-height: 30px
+            padding-top: 10px
+            padding-bottom: 10px
+            font-weight: 500
+        &__change
+            margin-top: 35px
+            line-height: 30px
+            font-weight: 500
+            font-size: 16px
+            text-decoration: underline
+@media (min-width: 320px) and (max-width: 768px)
+    .subscribe
+        &-info
+            flex-wrap: wrap
+            &-main
+                margin-bottom: 35px
+        &-tariff
+            &-block
+                flex-wrap: wrap
+            &-item
+                width: 100%
+                max-width: 100%
+                & + .subscribe-tariff-item
+                    margin-top: 35px

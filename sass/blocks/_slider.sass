@@ -1,0 +1,118 @@
+.slider
+    padding-top: 100px
+    &-container
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-slide
+        position: relative
+        display: flex!important
+        align-items: center
+        &__image
+            height: 282px
+            background: url('../img/slider/bg.png') no-repeat center center
+            margin-left: 71px
+            margin-right: 73px
+        &__text
+            margin-right: 71px
+            display: block
+        &__title
+            font-size: 30px
+            font-weight: bold
+            line-height: 40px
+            max-width: 255px
+    &-button
+        display: block
+        max-width: 295px
+        width: 100%
+        text-align: center
+        font-size: 16px
+        font-weight: 500
+        color: #ffffff
+        background: $main
+        padding-top: 15px
+        padding-bottom: 15px
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+        margin-left: auto
+        margin-right: auto
+        margin-top: 42px
+        margin-bottom: 47px
+        &:hover
+            color: #ffffff
+        &-prev
+            position: absolute
+            top: 50%
+            // transform: translateY(-50%)
+            background: url('../img/slider/left.png') no-repeat center center
+            width: 27px
+            height: 44px
+            margin-top: -22px
+            z-index: 10
+            cursor: pointer
+            left: 10px
+            right: auto
+        &-next
+            position: absolute
+            top: 50%
+            // transform: translateY(-50%)
+            background: url('../img/slider/right.png') no-repeat center center
+            width: 27px
+            height: 44px
+            margin-top: -22px
+            z-index: 10
+            cursor: pointer
+            right: 10px
+            left: auto
+    &-pagination
+        display: none
+
+@media (max-width: 930px)
+    .slider
+        &-slide
+            &__image
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 235px
+                background-size: contain
+
+@media (max-width: 768px) and (min-width: 320px)
+    .slider
+        padding-top: 37px
+        &-container
+            padding-bottom: 30px
+        &-slide
+            flex-direction: column
+            align-items: center
+            &__image
+                height: 190px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-left: 0
+                margin-right: 0
+                background-size: contain
+            &__text
+                margin-right: 0
+            &__title
+                text-align: center
+                margin-left: auto
+                margin-right: auto
+                margin-top: 35px
+                margin-bottom: 30px
+            &__subtitle
+                display: none
+        &-pagination
+            display: block
+        &-button
+            font-size: 14px
+            margin-top: 30px
+            &-prev, &-next
+                display: none
+    .swiper-pagination-bullet-active
+        background: $main
+    .swiper-pagination-bullets
+        bottom: -30px
+        

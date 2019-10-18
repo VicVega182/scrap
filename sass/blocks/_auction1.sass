@@ -1,0 +1,330 @@
+.auction1
+    padding-top: 40px
+    &-wrapper
+        width: 83%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-left: auto
+        margin-right: auto
+    &-title
+        font-size: 16px
+        font-weight: bold
+        margin-bottom: 25px
+        margin-top: 40px
+    &-card
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding-bottom: 60px
+        &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background: #E5E5E5
+        &-image
+            max-width: 239px
+            width: 100%
+            height: 239px
+            border-radius: 5px
+            background: #F7F9FC
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-right: 50px
+            &__text
+                font-size: 10px
+                width: 100px
+                text-align: center
+                margin-top: 12px
+                line-height: 15px
+        &-block
+            display: flex
+            flex-wrap: wrap
+        &-item
+            width: 50%
+            display: flex
+            align-items: flex-start
+            margin-bottom: 35px
+            &__image
+                margin-right: 15px
+                display: flex
+                align-items: center
+                justify-content: center
+                transform: translateY(7px)
+        &-text
+            display: flex
+            flex-direction: column
+            &__title
+                font-size: 14px
+                line-height: 20px
+                font-weight: 300
+                opacity: 0.8
+            &__description
+                font-size: 14px
+                font-weight: 500
+                line-height: 20px
+        &-button
+            background: $main
+            border-radius: 5px
+            color: #ffffff
+            font-size: 16px
+            font-weight: normal
+            max-width: 480px
+            width: 100%
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 35px
+            padding-right: 50px
+            margin-top: 15px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            & .img-icon
+                width: 28px
+                height: 28px
+                margin-right: 0
+                margin-left: 10px
+                & path
+                    fill: $text
+            &__wrapper
+                display: flex
+                align-items: center
+            &__timer
+                font-size: 40px
+                line-height: 50px
+                font-weight: bold
+    &-service   
+        width: 100%
+        padding-top: 20px
+        &-bookmark
+            display: inline-block
+            font-size: 14px
+            line-height: 40px
+            margin-right: 50px
+            margin-bottom: 22px
+            &_active
+                font-weight: 500    
+                position: relative
+                &:after
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 2px
+                    background: $main
+        &-block
+            width: 100%
+        &-item
+            width: 100%
+            background: #F7F9FC
+            border-radius: 5px  
+            display: flex
+            flex-direction: column
+            padding-left: 50px
+            padding-right: 50px
+            padding-top: 15px
+            padding-bottom: 25px
+            margin-bottom: 15px
+        &-main
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 40px
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                bottom: -20px
+                left: 0
+                width: 100%
+                height: 1px
+                background: #e5e5e5
+            &__price
+                display: flex
+                align-items: center
+            &__value
+                font-size: 18px
+                font-weight: 500
+                margin-left: 13px
+                &_number
+                    font-family: ALSRubl
+                    font-weight: 500
+            &__timer
+                display: flex
+                align-items: center
+            &__time
+                font-size: 14px
+                line-height: 20px
+                margin-left: 13px
+            &__image
+                display: flex
+                align-items: center
+                justify-content: center
+                & .img-icon
+                    width: 20px
+                    height: 20px
+                    & path
+                        fill: $main
+        &-description
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &__item
+                display: flex
+                align-items: center
+                justify-content: space-between
+            &__text
+                font-size: 10px
+                margin-left: 12px
+        &-option
+            &__text
+                font-size: 10px
+    &-sms
+        width: 100%
+    &-warning
+        margin-left: auto
+        margin-right: auto
+        color: $main
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 23px
+        height: 23px
+        border-radius: 50%
+        border: 1px $main solid
+        margin-top: 25px
+    &-text
+        font-size: 14px
+        line-height: 25px
+        text-align: center
+        max-width: 460px
+        width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 20px
+        margin-top: 15px
+
+@media (min-width: 320px) and (max-width: 768px)
+    .auction1
+        padding-top: 0
+        padding-bottom: 40px
+        &-wrapper
+            width: 100%
+            flex-direction: column
+            align-items: center
+        &-title
+            margin-top: 0
+        &-service
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-links
+                width: 100%
+                max-width: 320px
+                display: flex
+                align-items: center
+                justify-content: space-between
+            &-bookmark
+                margin-right: auto
+                &:last-child
+                    margin-right: 0
+            &-description
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                &__item
+                    margin-bottom: 15px
+                    // margin-right: 10px
+                    justify-content: flex-start
+                    width: 155px
+                    margin-right: 8px
+                    &:nth-child(2n)
+                        width: 123px
+                        margin-right: 0
+                        // width: max-content
+                        justify-content: flex-start
+                &__text
+                    // width: 125px
+                    margin-left: 10px
+                &__image
+                    width: 20px
+                    height: 20px
+                    // margin-right: 0
+                    // margin-left: auto
+            &-option
+                display: flex
+                justify-content: center
+            &-item
+                padding: 15px
+                &:last-child
+                    margin-bottom: 0
+        &-card
+            justify-content: center
+            width: 100%
+            // max-width: 
+            position: relative
+            padding-bottom: 170px
+            &-block
+                width: 167px
+            &-item
+                margin-bottom: 10px
+                width: 100%
+                &:nth-child(1)
+                    .auction1-card-text
+                        flex-wrap: wrap
+                    .auction1-card-text__description
+                        width: 100%
+                &__image
+                    margin-right: 11px
+                    transform: translateY(2px)
+            &-button
+                flex-wrap: wrap
+                justify-content: center
+                position: absolute
+                bottom: 35px
+                left: 50%
+                transform: translateX(-50%)
+                margin-top: 0
+                &__text
+                    width: 100%
+                    font-size: 14px
+                    line-height: 20px
+                &__timer
+                    margin-right: auto
+            &-image
+                margin-right: 13px
+                width: 140px
+                height: 140px
+            &-text
+                flex-direction: row
+                &__title
+                    font-size: 10px
+                    line-height: 20px
+                &__description
+                    font-size: 14px
+                    line-height: 20px
+                    margin-left: 4px
+        &-sms
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            margin-top: 20px
+        &-text
+            max-width: 280px
+            width: 100%
+            font-size: 12px
+            line-height: 20px
+            text-align: left
+            margin-left: 15px
+            margin-top: 0
+            margin-bottom: 0
+        &-warning
+            margin-top: 0
+            transform: translateY(50%)

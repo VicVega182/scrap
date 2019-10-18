@@ -1,0 +1,152 @@
+.feedback
+    padding-bottom: 60px
+    padding-top: 40px
+    &-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-title
+        font-size: 16px
+        font-weight: bold
+        margin-top: 0
+        margin-bottom: 40px
+    &-container
+        width: 100%
+    &-slide
+        &-wrap
+            background: $bg
+            border-radius: 5px  
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            max-width: 770px
+            width: 100%
+            margin-left: auto
+            margin-right: auto
+            padding-top: 20px
+            padding-bottom: 60px
+            padding-left: 50px
+            padding-right: 50px
+    &-image
+        width: 120px
+        height: 120px
+        border-radius: 50%
+        margin-right: 70px
+        & img
+            border-radius: 50%
+    &-name
+        font-size: 22px
+        line-height: 22px
+        font-weight: bold
+        margin-bottom: 10px
+    &-city
+        font-size: 14px
+    &-text
+        font-size: 20px
+        line-height: 22px
+        text-align: justify
+        font-weight: 300
+        margin-top: 35px
+        margin-bottom: 35px
+    &-main
+        max-width: 480px
+        width: 100%
+        display: flex
+        flex-direction: column
+    &-personal
+        display: flex
+        flex-direction: column
+    &-description
+        display: flex
+        align-items: center
+        justify-content: flex-start
+    &-item
+        display: flex
+        align-items: flex-start
+        margin-right: 45px
+        min-width: 190px
+        &:last-child
+            margin-right: 0
+        &-text
+            display: flex
+            flex-direction: column
+        &__title
+            font-size: 10px
+            margin-bottom: 10px
+        &__value
+            font-size: 16px
+            font-weight: bold
+        &__image
+            margin-right: 25px
+        & .img-icon path
+            fill: $text
+    &-pagination
+        display: none
+    &-button
+        &-prev
+            background: none
+            & .img-icon
+                fill: $main
+        &-next
+            background: none
+            & .img-icon
+                fill: $main
+    
+@media (min-width: 320px) and (max-width: 768px)
+    .feedback
+        padding-top: 0
+        &-title
+            font-size: 16px
+            margin-top: 15px
+            margin-bottom: 30px
+        &-slide
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-wrap
+                flex-direction: column
+                align-items: center
+                padding-bottom: 20px
+                padding-left: 15px
+                padding-right: 15px
+        &-image
+            width: 120px
+            height: 120px
+            margin-right: 0
+            margin-bottom: 25px
+        &-main
+            flex-direction: column
+            align-items: center
+        &-personal
+            align-items: center
+        &-name
+            font-size: 16px
+            margin-bottom: 5px
+        &-city
+            font-size: 13px
+        &-text
+            font-size: 16px
+            margin-bottom: 15px
+        &-item
+            flex-direction: column
+            align-items: center
+            margin-right: 0
+            &__image
+                margin-right: 0
+        &-description
+            width: 100%
+            justify-content: space-around
+        &-button
+            &-prev, &-next
+                display: none
+        &-pagination
+            display: block
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            bottom: -30px
+            & .swiper-pagination-bullet
+                margin-right: 12px
+                &:last-child
+                    margin-right: 0

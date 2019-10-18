@@ -1,0 +1,33 @@
+.checkbox
+    display: none
+    &-label
+        font-size: 14px
+        line-height: 40px
+        align-self: flex-start
+        margin-left: 48px
+        position: relative
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            position: absolute
+            left: -23px
+            top: 50%
+            transform: translate(-100%, -50%)
+            width: 25px
+            height: 25px
+            border-radius: 3px
+            border: 1px solid #e5e5e5  
+        &_active
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                left: -23px
+                top: 50%
+                transform: translate(-100%, -50%)
+                width: 25px
+                height: 25px
+                border-radius: 3px
+                border: 1px solid $main
+                background: url('../img/icons/Path.svg') no-repeat center center
