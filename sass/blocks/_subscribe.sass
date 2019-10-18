@@ -66,12 +66,12 @@
             width: 150px
             height: 150px
             border-radius: 50%
-            border: 2px solid $main
-            border-top-color: #CD3F36
-            transform: rotate(45deg)
+            //border: 2px solid $main
+            //border-top-color: #CD3F36
+            //transform: rotate(45deg)
             margin-top: 50px
         &__wrap
-            transform: rotate(-45deg)
+            //transform: rotate(-45deg)
             display: flex
             flex-direction: column
             align-items: center
@@ -231,6 +231,28 @@
             font-weight: 500
             font-size: 16px
             text-decoration: underline
+
+.chart-gauge
+    max-width: 150px
+    max-height: 360px
+    stroke-linecap: round
+    position: absolute
+    top: 0
+    left: 0
+    &-base
+        fill: none
+        stroke: #5ac56a
+        stroke-width: 2
+    &-secondary
+        fill: none
+        stroke: #cd3f36
+        stroke-width: 2
+        animation: load-gauge 2s linear forwards
+
+@keyframes load-gauge
+    to
+        stroke-dashoffset: 0
+
 @media (min-width: 320px) and (max-width: 768px)
     .subscribe
         &-info

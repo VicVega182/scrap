@@ -2763,13 +2763,9 @@ template {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid #51C569;
-  border-top-color: #CD3F36;
-  transform: rotate(45deg);
   margin-top: 50px;
 }
 .subscribe-info__wrap {
-  transform: rotate(-45deg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2966,6 +2962,31 @@ template {
   text-decoration: underline;
 }
 
+.chart-gauge {
+  max-width: 150px;
+  max-height: 360px;
+  stroke-linecap: round;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chart-gauge-base {
+  fill: none;
+  stroke: #5ac56a;
+  stroke-width: 2;
+}
+.chart-gauge-secondary {
+  fill: none;
+  stroke: #cd3f36;
+  stroke-width: 2;
+  animation: load-gauge 2s linear forwards;
+}
+
+@keyframes load-gauge {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .subscribe-info {
     flex-wrap: wrap;
