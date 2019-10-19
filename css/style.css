@@ -3595,6 +3595,9 @@ template {
   transition: 0.3s;
   transform: translate(-50%, -170%);
 }
+.modal .auction1-card-button__wrapper {
+  margin-bottom: 10px;
+}
 .modal_without_padding {
   padding: 0;
 }
@@ -3643,6 +3646,9 @@ template {
   line-height: 25px;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+.modal-title_big_margin {
+  margin-top: 20px;
 }
 .modal-checkboxs {
   display: flex;
