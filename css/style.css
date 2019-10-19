@@ -3598,6 +3598,9 @@ template {
 .modal .auction1-card-button__wrapper {
   margin-bottom: 10px;
 }
+.modal .partners-policy-container {
+  padding: 15px 45px 26px;
+}
 .modal_without_padding {
   padding: 0;
 }
