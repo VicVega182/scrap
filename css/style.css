@@ -1287,7 +1287,7 @@ template {
 .auction1-card {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding-bottom: 60px;
 }
@@ -3496,13 +3496,14 @@ template {
   padding-right: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .partners-options__title {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .partners-label {
   font-size: 14px;
@@ -3653,6 +3654,9 @@ template {
 .modal-title_big_margin {
   margin-top: 20px;
 }
+.modal-title_small_margin {
+  margin-top: 0;
+}
 .modal-checkboxs {
   display: flex;
   align-items: center;
@@ -3716,6 +3720,9 @@ template {
 }
 .modal-button_gray {
   background: #81909F;
+}
+.modal-button_balance {
+  margin: 25px 0 0;
 }
 .modal_rate {
   display: flex;
