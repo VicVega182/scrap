@@ -522,7 +522,7 @@ template {
 .header-menu {
   display: flex;
   align-items: center;
-  margin-right: 63px;
+  margin-right: 76px;
 }
 .header-menu__text {
   font-size: 12px;
@@ -634,7 +634,7 @@ template {
   transition: 0.2s;
 }
 .header-select__link {
-  margin-left: 15px;
+  margin-left: 10px;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -1035,7 +1035,6 @@ template {
 .slider-slide {
   position: relative;
   display: flex !important;
-  align-items: center;
 }
 .slider-slide__image {
   height: 282px;
@@ -1052,6 +1051,10 @@ template {
   font-weight: bold;
   line-height: 40px;
   max-width: 255px;
+  margin-bottom: 35px;
+}
+.slider-slide__subtitle {
+  font-size: 20px;
 }
 .slider-button {
   display: block;
@@ -1062,8 +1065,8 @@ template {
   font-weight: 500;
   color: #ffffff;
   background: #51C569;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin-left: auto;
@@ -1268,7 +1271,7 @@ template {
   }
 }
 .auction1 {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .auction1-wrapper {
   width: 83%;
@@ -1281,8 +1284,7 @@ template {
 .auction1-title {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 25px;
-  margin-top: 40px;
+  margin-bottom: 35px;
 }
 .auction1-card {
   position: relative;
@@ -1322,6 +1324,13 @@ template {
 .auction1-card-block {
   display: flex;
   flex-wrap: wrap;
+}
+.auction1-card-block .win-disclaimer {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.auction1-card-block .win-disclaimer__text {
+  font-size: 16px;
 }
 .auction1-card-item {
   width: 50%;
@@ -1388,7 +1397,10 @@ template {
 }
 .auction1-service {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
+}
+.auction1-service-links {
+  margin-bottom: 5px;
 }
 .auction1-service-bookmark {
   display: inline-block;
@@ -1423,7 +1435,7 @@ template {
   padding-right: 50px;
   padding-top: 15px;
   padding-bottom: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .auction1-service-main {
   display: flex;
@@ -1662,6 +1674,9 @@ template {
     transform: translateY(50%);
   }
 }
+.auction2-title {
+  margin-top: 45px;
+}
 .auction2-card-button {
   background: #F7F9FC;
   color: #34495E;
@@ -1676,7 +1691,7 @@ template {
   line-height: 25px;
   color: #51C569;
   text-decoration: underline;
-  margin-top: 15px;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 .auction2-text {
@@ -1737,7 +1752,7 @@ template {
   font-size: 16px;
   font-weight: bold;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .auction3-sum {
   display: flex;
@@ -1798,7 +1813,7 @@ template {
 .auction3-form {
   width: 100%;
   position: relative;
-  margin-top: 75px;
+  margin-top: 65px;
   background: #F7F9FC;
   border-radius: 5px;
   display: flex;
@@ -1818,7 +1833,7 @@ template {
   font-size: 16px;
   font-weight: bold;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .auction3-form__description {
   font-size: 12px;
@@ -1826,6 +1841,7 @@ template {
   max-width: 400px;
   width: 100%;
   text-align: center;
+  margin-bottom: 30px;
 }
 .auction3-form-block {
   width: 100%;
@@ -1989,7 +2005,7 @@ template {
   font-size: 16px;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .lots-filter .reg-item {
   margin: 0;
@@ -2013,7 +2029,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 .lots-verification__warning {
   color: #51C569;
@@ -2037,8 +2053,8 @@ template {
   align-items: center;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: 30px;
-  padding-top: 20px;
+  margin-bottom: 35px;
+  padding-top: 15px;
 }
 .lots-options:after {
   content: "";
@@ -2142,6 +2158,7 @@ template {
   min-width: 150px;
   min-height: 150px;
   margin-right: 45px;
+  overflow: hidden;
 }
 .lots-card__image-noPhoto {
   flex-direction: column;
@@ -2175,12 +2192,15 @@ template {
   align-items: flex-end;
   margin-top: 25px;
 }
+.lots-card__action .lots-card__value + .lots-card__value {
+  margin-top: 15px;
+}
 .lots-card__value {
   width: 290px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .lots-card__value-text {
   font-size: 14px;
@@ -2380,6 +2400,9 @@ template {
   padding-top: 45px;
   padding-bottom: 35px;
 }
+.win .card-item {
+  margin-bottom: 20px;
+}
 .win-wrapper {
   display: flex;
   flex-direction: column;
@@ -2389,7 +2412,7 @@ template {
   font-size: 16px;
   font-weight: bold;
   margin-top: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .win-title br {
   display: none;
@@ -2471,8 +2494,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 35px;
-  margin-bottom: 45px;
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 .win-disclaimer__warning {
   color: #51C569;
@@ -2778,12 +2801,12 @@ template {
 .subscribe-info-warning {
   display: flex;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .subscribe-info-rep {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 .subscribe-info-main {
   display: flex;
@@ -3204,8 +3227,8 @@ template {
   line-height: 22px;
   text-align: justify;
   font-weight: 300;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 .feedback-main {
   max-width: 480px;
@@ -3225,7 +3248,7 @@ template {
 .feedback-item {
   display: flex;
   align-items: flex-start;
-  margin-right: 45px;
+  margin-right: 20px;
   min-width: 190px;
 }
 .feedback-item:last-child {
@@ -3237,7 +3260,7 @@ template {
 }
 .feedback-item__title {
   font-size: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .feedback-item__value {
   font-size: 16px;
@@ -3359,7 +3382,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .about-target {
@@ -3819,8 +3842,8 @@ template {
   }
 }
 .footer-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   display: flex;
   align-items: center;
