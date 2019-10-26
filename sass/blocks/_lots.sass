@@ -221,6 +221,12 @@
 @media (min-width: 320px) and (max-width: 768px)
     .lots
         padding-top: 0
+        &-links
+            justify-content: center
+            &__link
+                font-size: 12px
+                &:last-child
+                    margin-right: 0
         &-card
             .lots-item
                 flex-basis: 100%
@@ -256,6 +262,7 @@
         &-options
             padding-top: 0
             flex-wrap: wrap
+            flex-direction: column
             &:after
                 width: 0
         &-verification
@@ -265,8 +272,9 @@
             padding-left: 15px
             justify-content: space-between
             margin-bottom: 0
+            align-items: flex-start
             &__text
-                width: 245px
+                width: calc(100% - 22px)
                 text-align: justify
                 font-size: 12px
                 line-height: 20px
