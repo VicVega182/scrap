@@ -27,6 +27,12 @@ body {
   color: #34495E;
 }
 
+#root {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 93px;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -725,8 +731,8 @@ template {
   transform: translateX(0);
 }
 .header-navbar-value {
-  margin-bottom: 56px;
-  margin-top: 40px;
+  margin-bottom: 55px;
+  margin-top: 35px;
   border: 1px solid #3DAF54;
   border-radius: 5px;
   padding-top: 16px;
@@ -791,7 +797,7 @@ template {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .header-item:hover {
   cursor: pointer;
@@ -1024,7 +1030,21 @@ template {
   }
 }
 .slider {
-  padding-top: 100px;
+  padding-top: 110px;
+}
+.slider .slick-arrow {
+  width: 16px;
+  height: 33px;
+  object-fit: cover;
+}
+.slider .slick-arrow:before {
+  display: none;
+}
+.slider .slick-prev {
+  left: 0;
+}
+.slider .slick-next {
+  right: 0;
 }
 .slider-container {
   position: relative;
@@ -1271,7 +1291,7 @@ template {
   }
 }
 .auction1 {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .auction1-wrapper {
   width: 83%;
@@ -2030,7 +2050,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .lots-verification__warning {
   color: #51C569;
@@ -2054,8 +2074,8 @@ template {
   align-items: center;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: 35px;
-  padding-top: 15px;
+  margin-bottom: 40px;
+  padding-top: 20px;
 }
 .lots-options:after {
   content: "";
@@ -2101,6 +2121,7 @@ template {
 }
 .lots-block-my {
   display: none;
+  padding-top: 0;
 }
 .lots-block-my_active {
   display: block;
@@ -2116,6 +2137,9 @@ template {
   border-radius: 5px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+.lots-card .lots-item {
+  flex-basis: 25%;
 }
 .lots-card_active {
   border: 1px solid #51C569;
@@ -2141,7 +2165,7 @@ template {
   padding-left: 50px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .lots-card__title_active {
   background: #51C569;
@@ -2238,9 +2262,10 @@ template {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
+  min-width: 290px;
 }
 .lots-item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-right: 70px;
 }
 .lots-item:nth-child(3n) {
@@ -2257,6 +2282,9 @@ template {
 @media (min-width: 320px) and (max-width: 768px) {
   .lots {
     padding-top: 0;
+  }
+  .lots-card .lots-item {
+    flex-basis: 100%;
   }
   .lots-card__description {
     position: relative;
@@ -2710,7 +2738,7 @@ template {
 }
 .subscribe {
   padding-bottom: 35px;
-  padding-top: 45px;
+  padding-top: 40px;
 }
 .subscribe-info {
   display: flex;
@@ -2727,6 +2755,9 @@ template {
   width: 100%;
   height: 1px;
   background: #e5e5e5;
+}
+.subscribe-info-description {
+  flex-basis: 40%;
 }
 .subscribe-info__logo {
   width: 100px;
@@ -2809,6 +2840,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 100%;
 }
 .subscribe-info-main {
   display: flex;
@@ -2911,12 +2943,15 @@ template {
   font-weight: 500;
   line-height: 25px;
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .subscribe-tariff-block {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.subscribe-tariff__image {
+  margin-bottom: 15px;
 }
 .subscribe-tariff__price {
   font-size: 20px;
@@ -2960,8 +2995,8 @@ template {
   margin: 0;
   list-style: none;
   list-style-image: url("../img/subscribe/PathGreen.svg");
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .subscribe-tariff__item {
   font-size: 13px;
@@ -3018,6 +3053,9 @@ template {
   }
   .subscribe-info-main {
     margin-bottom: 35px;
+  }
+  .subscribe-info-description {
+    flex-basis: 100%;
   }
   .subscribe-tariff-block {
     flex-wrap: wrap;
@@ -3137,7 +3175,7 @@ template {
   line-height: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
-  max-width: 320px;
+  max-width: 350px;
   width: 100%;
   color: #ffffff;
   border-radius: 10px;
@@ -3190,6 +3228,20 @@ template {
   flex-direction: column;
   align-items: center;
 }
+.feedback-wrapper .slick-arrow {
+  width: 16px;
+  height: 33px;
+  object-fit: cover;
+}
+.feedback-wrapper .slick-arrow:before {
+  display: none;
+}
+.feedback-wrapper .slick-prev {
+  left: 0;
+}
+.feedback-wrapper .slick-next {
+  right: 0;
+}
 .feedback-title {
   font-size: 16px;
   font-weight: bold;
@@ -3219,25 +3271,28 @@ template {
   height: 120px;
   border-radius: 50%;
   margin-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feedback-image img {
   border-radius: 50%;
 }
 .feedback-name {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .feedback-city {
-  font-size: 14px;
+  font-size: 12px;
 }
 .feedback-text {
   font-size: 20px;
   line-height: 22px;
   text-align: justify;
   font-weight: 300;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 .feedback-main {
@@ -3258,7 +3313,7 @@ template {
 .feedback-item {
   display: flex;
   align-items: flex-start;
-  margin-right: 20px;
+  margin-right: 80px;
   min-width: 190px;
 }
 .feedback-item:last-child {
@@ -3375,7 +3430,7 @@ template {
 }
 .about {
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 .about-wrapper {
   display: flex;
@@ -3386,7 +3441,7 @@ template {
   font-size: 16px;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 .about-image {
   display: flex;
@@ -3395,11 +3450,18 @@ template {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.about-image:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.about-image:nth-of-type(3) {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 .about-target {
   font-size: 30px;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
@@ -3432,7 +3494,7 @@ template {
 }
 .partners {
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 25px;
 }
 .partners-wrapper {
   display: flex;
@@ -3446,7 +3508,7 @@ template {
 .partners-title {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 0;
 }
 .partners-link {
@@ -3519,6 +3581,10 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.partners-form .reg-policy {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .partners-options {
   background: #F7F9FC;
@@ -3681,7 +3747,7 @@ template {
   text-align: center;
   font-size: 14px;
   line-height: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 .modal-title_big_margin {
@@ -3767,6 +3833,7 @@ template {
 .modal_rate .modal-button {
   width: 86px;
   margin: 0;
+  padding: 5px 0;
 }
 .modal_rate_text {
   width: 50%;
@@ -3850,6 +3917,11 @@ template {
   .modal-checkbox:first-child {
     transform: translateX(32px);
   }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer-wrapper {
   padding-top: 40px;

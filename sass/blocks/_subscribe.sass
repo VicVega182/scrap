@@ -1,6 +1,6 @@
 .subscribe
     padding-bottom: 35px
-    padding-top: 45px
+    padding-top: 40px
     &-info
         display: flex
         align-items: flex-start
@@ -15,6 +15,8 @@
             width: 100%
             height: 1px
             background: #e5e5e5
+        &-description
+            flex-basis: 40%
         &__logo
             width: 100px
             height: 100px
@@ -87,6 +89,7 @@
             display: flex
             flex-direction: column
             align-items: flex-end
+            width: 100%
         &-main
             display: flex
             flex-direction: column
@@ -169,11 +172,13 @@
             font-weight: 500
             line-height: 25px
             margin-top: 35px
-            margin-bottom: 35px
+            margin-bottom: 30px
         &-block
             display: flex
             justify-content: space-between
             width: 100%
+        &__image
+            margin-bottom: 15px
         &__price
             font-size: 20px
             font-weight: bold
@@ -209,8 +214,8 @@
             margin: 0
             list-style: none
             list-style-image: url('../img/subscribe/PathGreen.svg')
-            margin-top: 20px
-            margin-bottom: 35px
+            margin-top: 10px
+            margin-bottom: 30px
         &__item
             font-size: 13px
             line-height: 25px
@@ -259,6 +264,8 @@
             flex-wrap: wrap
             &-main
                 margin-bottom: 35px
+            &-description
+                flex-basis: 100%
         &-tariff
             &-block
                 flex-wrap: wrap
