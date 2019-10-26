@@ -3072,6 +3072,30 @@ template {
   .subscribe-info-description {
     flex-basis: 100%;
   }
+  .subscribe-info-balance {
+    display: flex;
+    white-space: nowrap;
+  }
+  .subscribe-info-name {
+    width: calc(100% - 140px);
+  }
+  .subscribe-info__org {
+    margin-bottom: 5px;
+  }
+  .subscribe-info-rep {
+    align-items: center;
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid #E5E5E5;
+    width: 100%;
+  }
+  .subscribe-info__value {
+    margin-top: 0;
+  }
+  .subscribe-info-current {
+    flex-direction: column;
+    align-items: center;
+  }
   .subscribe-tariff-block {
     flex-wrap: wrap;
   }
