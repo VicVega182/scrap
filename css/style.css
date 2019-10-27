@@ -25,12 +25,14 @@ a:hover {
 body {
   background: #ffffff;
   color: #34495E;
-}
-
-#root {
   min-height: 100vh;
   position: relative;
   padding-bottom: 93px;
+}
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 168px;
+  }
 }
 
 img {
