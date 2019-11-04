@@ -2310,6 +2310,30 @@ template {
   z-index: 100;
   transition-duration: 0.5s;
 }
+.lots__widget.lots__top {
+  top: 100px;
+  bottom: unset;
+  background: transparent;
+}
+.lots__widget.lots__top.-novisible {
+  transform: translate(200%, 0);
+}
+.lots__widget.lots__top .lots__widget__container {
+  justify-content: flex-end;
+}
+.lots__widget.lots__top .lots__top__container {
+  max-width: 375px;
+  display: flex;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  padding-right: 28px;
+}
+.lots__widget.lots__top .lots__widget__info__left {
+  display: block;
+}
+.lots__widget.lots__top .lots__widget__info__left .lots__widget__character {
+  margin-left: 0;
+  margin-top: 10px;
+}
 .lots__widget.dark {
   background: #34495E;
   color: #fff;
@@ -2324,7 +2348,7 @@ template {
   position: absolute;
 }
 .lots__widget__link {
-  width: 61px;
+  width: 66px;
   height: 66px;
   background: #51C569;
   display: flex;
