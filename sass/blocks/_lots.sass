@@ -222,12 +222,10 @@
         bottom: 0
         left: 0
         width: 100%
-        display: none
+        display: flex
         background: #fff
         z-index: 100
         transition-duration: 0.5s
-        @media (max-width: 768px)
-            display: flex
         &.dark
             background: #34495E
             color: #fff
@@ -246,10 +244,16 @@
             justify-content: center
         &__name
             font-size: 12px
+            @media (min-width: 769px)
+                font-size: 16px
         &__character
             font-size: 12px
             display: flex
             margin-top: 10px
+            @media (min-width: 769px)
+                margin-top: 0
+                margin-left: 20px
+                font-size: 16px
             &__item
                 display: flex
                 align-items: center
@@ -271,10 +275,25 @@
             justify-content: space-between
             &__left
                 padding-left: 28px
+                @media (min-width: 769px)
+                    display: flex
             &__time
                 font-weight: 500
                 font-size: 20px
                 padding: 0 12px
+                display: flex
+                align-items: center
+                img
+                    margin-right: 5px
+                    @media (max-width: 768px)
+                        display: none
+                @media (min-width: 769px)
+                    font-size: 40px
+        &__container
+            max-width: 930px
+            margin: 0 auto
+            display: flex
+            width: 100%
 
 @media (min-width: 320px) and (max-width: 768px)
     .lots
