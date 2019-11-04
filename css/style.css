@@ -49,6 +49,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 320px) {
+  .wrapper {
+    width: 95%;
+  }
+}
 
 select {
   background: none;
@@ -65,8 +70,9 @@ ol li:before {
   font-weight: bold;
 }
 
-input, select, textarea {
+input:not([type=checkbox]):not([type=radio]), select, textarea {
   box-shadow: none;
+  -webkit-appearance: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2294,10 +2300,15 @@ template {
   bottom: 0;
   left: 0;
   width: 100%;
-  display: flex;
+  display: none;
   background: #fff;
   z-index: 100;
   transition-duration: 0.5s;
+}
+@media (max-width: 768px) {
+  .lots__widget {
+    display: flex;
+  }
 }
 .lots__widget.dark {
   background: #34495E;
@@ -3148,6 +3159,7 @@ template {
   }
   .subscribe-info-main {
     margin-bottom: 35px;
+    width: 100%;
   }
   .subscribe-info-description {
     flex-basis: 100%;

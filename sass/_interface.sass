@@ -37,6 +37,8 @@ img
     width: 85%
     margin-left: auto
     margin-right: auto
+    @media (max-width: 320px)
+        width: 95%
 
 select
     background: none
@@ -48,5 +50,6 @@ ol li:before
     counter-increment: li
     content: counters(li,".") " "
     font-weight: bold
-input, select, textarea
+input:not([type="checkbox"]):not([type="radio"]), select, textarea
     box-shadow: none
+    -webkit-appearance: none
