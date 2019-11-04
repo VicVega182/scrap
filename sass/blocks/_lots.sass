@@ -217,6 +217,62 @@
             margin-bottom: 35px
         &__image
             margin-right: 10px
+    &__widget
+        position: fixed
+        bottom: 0
+        left: 0
+        width: 100%
+        display: flex
+        background: #fff
+        z-index: 100
+        transition-duration: 0.5s
+        &.dark
+            background: #34495E
+            color: #fff
+        &.-novisible
+            transform: translate(-100%, 0)
+        &.-visible
+            transform: translate(0, 0)
+        &__load
+            position: absolute
+        &__link
+            width: 61px
+            height: 66px
+            background: #51C569
+            display: flex
+            align-items: center
+            justify-content: center
+        &__name
+            font-size: 12px
+        &__character
+            font-size: 12px
+            display: flex
+            margin-top: 10px
+            &__item
+                display: flex
+                align-items: center
+                margin-right: 20px
+                font-weight: 700
+                img
+                    margin-right: 5px
+        &__load
+            position: absolute
+            background: #51C569
+            height: 3px
+            bottom: 0
+            left: 0
+        &__info
+            width: calc(100% - 61px)
+            display: flex
+            align-items: center
+            position: relative
+            justify-content: space-between
+            &__left
+                padding-left: 28px
+            &__time
+                font-weight: 500
+                font-size: 20px
+                padding: 0 12px
 
 @media (min-width: 320px) and (max-width: 768px)
     .lots
@@ -233,6 +289,8 @@
             &__description
                 position: relative
                 width: 100%
+            &__title
+                padding-left: 12px
             &__image
                 position: absolute
                 left: 12px
