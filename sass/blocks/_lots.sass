@@ -286,6 +286,9 @@
                 &:last-child
                     margin-right: 0
         &-card
+            &__button
+                width: 100%
+                text-align: center
             .lots-item
                 flex-basis: 100%
             &__description
@@ -338,3 +341,11 @@
                 text-align: justify
                 font-size: 12px
                 line-height: 20px
+@media (max-width: 320px)
+    .lots
+        &-card
+            &__image
+                width: 95px
+                height: 95px
+                min-width: 95px
+                min-height: 95px

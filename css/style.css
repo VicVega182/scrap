@@ -1447,6 +1447,11 @@ template {
   margin-right: 50px;
   margin-bottom: 22px;
 }
+@media (max-width: 320px) {
+  .auction1-service-bookmark {
+    font-size: 12px;
+  }
+}
 .auction1-service-bookmark_active {
   font-weight: 500;
   position: relative;
@@ -2384,6 +2389,10 @@ template {
   .lots-links__link:last-child {
     margin-right: 0;
   }
+  .lots-card__button {
+    width: 100%;
+    text-align: center;
+  }
   .lots-card .lots-item {
     flex-basis: 100%;
   }
@@ -2448,6 +2457,14 @@ template {
     line-height: 20px;
   }
 }
+@media (max-width: 320px) {
+  .lots-card__image {
+    width: 95px;
+    height: 95px;
+    min-width: 95px;
+    min-height: 95px;
+  }
+}
 .card-main {
   position: relative;
   display: flex;
@@ -2497,6 +2514,11 @@ template {
   margin-right: 0;
 }
 
+@media (max-width: 320px) {
+  .card-main {
+    padding-left: 105px;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .card-main {
     width: 100%;
@@ -4056,6 +4078,13 @@ template {
     transform: translateX(32px);
   }
 }
+@media (max-width: 768px) and (min-width: 320px) {
+  .popup-content .partners {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .footer {
   position: absolute;
   bottom: 0;
